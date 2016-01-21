@@ -32,7 +32,7 @@ html,body {
     bottom:0px;
     left:48%;
     background-size: 60px 60px;
-    background-image:url(../assets/arrow.gif);
+    background-image:url(/imgs/arrow.gif);
     background-repeat:no-repeat;
 }
 
