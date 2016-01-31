@@ -1,7 +1,7 @@
 /**{
     outline: 1px solid red;
-}
-*/
+}*/
+
 
 html,body {
     font-family: 'Raleway', sans-serif;
@@ -234,42 +234,75 @@ p {
     margin-bottom: 3%;
     padding-top: 15px;
     padding-bottom: 10px;
-    background-color:#D46A6A;
+    background-color:#87CEFA;
 }
 
-#owl-demo .item {
-    margin-top: 5px;
-    height: 400px;
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 20px; /* Firefox */
-    column-gap: 20px;
+.text {
+    width:440px;
+    height:250px;
+    background:white;
+    opacity:0;
 }
 
-#owl-demo .item img {
-    display: block;
-    width: 90%;
-    height: auto;
-    margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 15px;
-    border:2px solid #D46A6A;
+#pic1 {
+    width:440px;
+    height:250px;
+    background: url(glycemopedia.png) no-repeat;
+    background-size: 440px 250px;
 }
 
-p#item-paragraph {
-    color: black;
-    width: 70%;
-    font-size: 20px;
-    margin-left: 15%;
-    margin-right: 10%;
-    margin-top: 100px;
+
+#pic1:hover .text {
+    opacity:0.8;
+    text-align:justify;
+    color:#000000;
+    font-size:25px;
+    font-weight:500;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding: 20px;
-    border-radius: 15px;
-    opacity: 0.7;
+    /*padding:30px;*/
+}
+
+#pic2 {
+    width:440px;
+    height:250px;
+    background: url(restroulette.png) no-repeat;
+    background-size: 440px 250px;
+}
+
+#pic2:hover .text {
+    opacity:0.6;
+    text-align:justify;
+    color:#000000;
+    font-size:25px;
+    font-weight:500;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    /*padding:30px;*/
 }
 
 
+#pic3 {
+    width:440px;
+    height:250px;
+    background: url(/imgs/filmsf.png) no-repeat;
+    background-size: 440px 250px;
+}
+
+
+#pic3:hover .text {
+    opacity:0.6;
+    text-align:justify;
+    color:#000000;
+    font-size:25px;
+    font-weight:500;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-top:30px;
+}
+
+
+.portfolio-list {
+    display: inline-block;
+    padding: 10px;
+}
