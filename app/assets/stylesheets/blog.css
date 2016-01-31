@@ -247,7 +247,7 @@ p {
 #pic1 {
     width:440px;
     height:250px;
-    background: url(glycemopedia.png) no-repeat;
+    background: url(/imgs/glycemopedia.png) no-repeat;
     background-size: 440px 250px;
     border-radius: 15px;
     box-shadow: 10px 10px 5px #888888;
@@ -267,7 +267,7 @@ p {
 #pic2 {
     width:440px;
     height:250px;
-    background: url(restroulette.png) no-repeat;
+    background: url(/imgs/restroulette.png) no-repeat;
     background-size: 440px 250px;
     border-radius: 15px;
     box-shadow: 10px 10px 5px #888888;
