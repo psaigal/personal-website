@@ -226,15 +226,15 @@ p {
     font-size:80px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    color:#87CEFA;
+    color:white;
     text-shadow: 1px 1px #000000;
     text-align:center;
     width:100%;
     margin-top:0px;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     padding-top: 15px;
     padding-bottom: 10px;
-    /*background-color:#87CEFA;*/
+    background-color:#A61919;
 }
 
 .text {
@@ -249,18 +249,19 @@ p {
     height:250px;
     background: url(glycemopedia.png) no-repeat;
     background-size: 440px 250px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 
 #pic1:hover .text {
     opacity:0.8;
-    text-align:justify;
-    color:#000000;
+    color:#A61919;
     font-size:25px;
     font-weight:500;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding-top:30px;
+    padding-top: 40px;
 }
 
 #pic2 {
@@ -268,17 +269,18 @@ p {
     height:250px;
     background: url(restroulette.png) no-repeat;
     background-size: 440px 250px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 #pic2:hover .text {
-    opacity:0.6;
-    text-align:justify;
-    color:#000000;
+    opacity:0.8;
+    color:#A61919;
     font-size:25px;
     font-weight:500;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding-top:30px;
+    padding-top:40px;
 }
 
 
@@ -287,24 +289,25 @@ p {
     height:250px;
     background: url(/imgs/filmsf.png) no-repeat;
     background-size: 440px 250px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 
 #pic3:hover .text {
-    opacity:0.6;
-    text-align:justify;
-    color:#000000;
+    opacity:0.8;
+    color:#A61919;
     font-size:25px;
     font-weight:500;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding-top:30px;
+    padding-top:40px;
 }
 
 
 .portfolio-list {
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
 }
 
  a:hover {
