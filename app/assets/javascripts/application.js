@@ -11,10 +11,12 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
 //= require jquery.stellar
 //= require jquery.waypoints
 //= require jquery.easing
+//= require bootstrap-sprockets
 //= require owl.carousel
+//= require typed
 //= require turbolinks
 //= require_tree .
+

@@ -1,7 +1,4 @@
-
 jQuery(document).ready(function ($) {
-
-
     //initialise Stellar.js
     $(window).stellar();
 
@@ -67,16 +64,24 @@ jQuery(document).ready(function ($) {
     });
 
 
-  $("#owl-demo").owlCarousel({
+    $("#owl-demo").owlCarousel({
       autoPlay: 3000, //Set AutoPlay to 3 seconds
       items : 1,
       itemsDesktop : [1199,2],
       itemsDesktopSmall : [979,2]
-  });
+    });
 
-  $('#front-page').fadeIn(4000);
+    $('#front-page').fadeIn(4000);
 
+    $(".element").typed({
+        strings: ["Hi, I'm Priyanka Saigal."],
+        typeSpeed: 0
+    });
+
+    $(".element-two").typed({
+        strings: ["Front End Engineer"],
+        typeSpeed: 0
+    });
 });
-
 
 
