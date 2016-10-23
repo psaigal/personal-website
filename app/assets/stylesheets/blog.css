@@ -1,7 +1,7 @@
 /**{
     outline: 1px solid red;
-}
-*/
+}*/
+
 
 html,body {
     font-family: 'Raleway', sans-serif;
@@ -32,7 +32,7 @@ html,body {
     bottom:0px;
     left:48%;
     background-size: 60px 60px;
-    background-image:url(../assets/arrow.gif);
+    background-image:url(/imgs/arrow.gif);
     background-repeat:no-repeat;
 }
 
@@ -97,7 +97,6 @@ html,body {
   margin-top:5px;
   margin-bottom: 15px;
   width:100%;
-  position:relative;
   text-align:center;
 }
 
@@ -171,9 +170,11 @@ ul#social-media-icons {
     margin-top: 7%;
 }
 
-li#social-media-icons-li {
+li.social-media-icons-li {
     display: inline;
-    padding:30px;
+    padding:50px;
+    height: '150px';
+    width: '150px';
 }
 
 
@@ -212,45 +213,96 @@ p {
     font-size:80px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    color:orange;
+    color:white;
     text-shadow: 1px 1px #000000;
     text-align:center;
     width:100%;
     margin-top:0px;
-    margin-bottom: 3%;
+    margin-bottom: 8%;
     padding-top: 15px;
     padding-bottom: 10px;
-    /*background-color:orange;*/
+    background-color:#A61919;
 }
 
-#owl-demo .item {
-    margin-top: 5px;
-    height: 400px;
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 20px; /* Firefox */
-    column-gap: 20px;
+.text {
+    width:440px;
+    height:250px;
+    background:white;
+    opacity:0;
 }
 
-#owl-demo .item img {
-    display: block;
-    width: 90%;
-    height: auto;
-    margin-left: 20%;
-    margin-right: 10%;
-    padding-bottom: 20%;
+#pic1 {
+    width:440px;
+    height:250px;
+    background: url(/imgs/glycemopedia.png) no-repeat;
+    background-size: 440px 250px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888888;
 }
 
-#item-paragraph {
-    color: black;
-    width: 70%;
-    font-size: 20px;
-    margin-left: 15%;
-    margin-right: 10%;
-    margin-top: 2%;
+
+#pic1:hover .text {
+    opacity:0.8;
+    color:#A61919;
+    font-size:25px;
+    font-weight:500;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
+    padding-top: 40px;
+}
+
+#pic2 {
+    width:440px;
+    height:250px;
+    background: url(/imgs/restroulette.png) no-repeat;
+    background-size: 440px 250px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#pic2:hover .text {
+    opacity:0.8;
+    color:#A61919;
+    font-size:25px;
+    font-weight:500;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-top:40px;
+}
+
+
+#pic3 {
+    width:440px;
+    height:250px;
+    background: url(/imgs/filmsf.png) no-repeat;
+    background-size: 440px 250px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+
+#pic3:hover .text {
+    opacity:0.8;
+    color:#A61919;
+    font-size:25px;
+    font-weight:500;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-top:40px;
+}
+
+
+.portfolio-list {
+    display: inline-block;
+    padding: 5px;
+}
+
+ a:hover {
+   text-decoration: none !important;
+}
+
+ul.portfolio {
+   padding: 0%;
 }
 
 .typed-cursor{

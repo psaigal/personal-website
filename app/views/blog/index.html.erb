@@ -2,7 +2,7 @@
   <a class="button" data-slide="2" title=""></a>
   <ul class="navigation">
     <li data-slide="1" class="active">About Me</li>
-    <li data-slide="2" class="active">Projects</li>
+    <li data-slide="2" class="active">Portfolio</li>
     <li data-slide="3" class="active">Contact Me</li>
   </ul>
   <div id="front-page">
@@ -13,18 +13,46 @@
 
   <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
     <a class="button" data-slide="3" title=""></a>
-    <p id="contact-header-projects">Projects</p>
-    <div id="owl-demo">
-      <div class="item"><%= link_to image_tag("restroulette.png", height: '32', width: '32'), "http://restaurant-roulette.herokuapp.com/", :target => "_blank" %>
-        <p id="item-paragraph"> <span style="font-size:30px">Restaurant Roulette</span><br><br> Web application that helps groups of people solve the indecision that arises when choosing a restaurant due to conflicting preferences
-        </p>
-      </div>
-      <div class="item"><%= link_to image_tag("glycemopedia.png", height: '32', width: '32'), "https://glycemopedia.herokuapp.com/", :target => "_blank" %>
-        <p id="item-paragraph"><span style="font-size:30px">Glycemopedia</span><br><br>Web application that enables users to make intelligent food choices based on glycemic index of foods consumed, which can help in the prevention of diabetes and help blood sugar regulation </p>
+    <p id="contact-header-projects">Portfolio</p>
+
+    <ul class="portfolio">
+      <div class="col-sm-4">
+          <li class="portfolio-list">
+            <a href="http://glycemopedia.herokuapp.com" class="portfolio-link">
+            <div id="pic1">
+                <div class="text">
+                Platform that enables users to make intelligent food choices based on the glycemic index of foods consumed.
+                </div>
+            </div>
+            </a>
+          </li>
       </div>
 
-    </div>
-  </div><!--End Slide 2-->
+      <div class="col-sm-4">
+        <li class="portfolio-list">
+          <a href="http://restaurant-roulette.herokuapp.com" class="portfolio-link">
+          <div id="pic2">
+            <div class="text">
+              Food decision service to help indecisive friends quickly find a restaurant based on conflicted preferences.
+            </div>
+          </div>
+          </a>
+        </li>
+      </div>
+
+      <div class="col-sm-4">
+        <li class="portfolio-list">
+        <a href="http://filmed-in-sf.herokuapp.com" class="portfolio-link">
+          <div id="pic3">
+            <div class="text">
+              Web application that allows movie aficionados to view on a map the locations in San Francisco where their favorite movies were filmed
+            </div>
+          </div>
+        </a>
+        </li>
+      </div>
+    </ul>
+  </div>
 
 
   <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
@@ -42,29 +70,24 @@
           <li id="contact-icons-info-li">Priyanka Saigal</li>
           <li id="contact-icons-info-li">San Francisco, CA</li>
           <li id="contact-icons-info-li">psaigal48@gmail.com</li>
-          <li id="contact-icons-info-li">Click Here</li>
+          <li id="contact-icons-info-li"><%= link_to "Click Here", "http://docdro.id/TBFIxXH", :target => "_blank" %></li>
         </ul>
-      <!-- </div> -->
+
 
 
       <ul id="social-media-icons">
-        <li id="social-media-icons-li">
+        <li class="social-media-icons-li">
           <%= link_to image_tag("GitHub.png"), "http://github.com/psaigal", :target => "_blank" %>
         </li>
-        <li id="social-media-icons-li">
+        <li class="social-media-icons-li">
           <%= link_to image_tag("GooglePlus.png"), "https://plus.google.com/100529383494509522614/posts", :target => "_blank" %>
         </li>
-        <li id="social-media-icons-li">
+        <li class="social-media-icons-li">
           <%= link_to image_tag("LinkedIn.png"), "https://www.linkedin.com/in/priyanka-saigal-5034ab56", :target => "_blank" %>
         </li>
-        <li id="social-media-icons-li">
+        <li class="social-media-icons-li">
           <%= link_to image_tag("Twitter.png"), "https://twitter.com/priyankasaigal", :target => "_blank" %>
         </li>
       </ul>
     <div>
   </div>
-
-
-
-
-
