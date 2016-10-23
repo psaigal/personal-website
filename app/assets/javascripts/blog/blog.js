@@ -75,13 +75,15 @@ jQuery(document).ready(function ($) {
 
     $(".element").typed({
         strings: ["Hi, I'm Priyanka Saigal."],
-        typeSpeed: 0
+        typeSpeed: 70,
     });
 
-    $(".element-two").typed({
-        strings: ["Front End Engineer"],
-        typeSpeed: 0
-    });
+    setTimeout(function() {
+        $(".element-two").typed({
+            strings: ["Front End Developer"],
+            typeSpeed: 100
+        });
+    }, 2500);
 });
 
 

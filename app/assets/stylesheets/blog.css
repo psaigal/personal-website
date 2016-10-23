@@ -41,7 +41,7 @@ html,body {
 }
 
 #slide1 {
-    background-color:white;
+    background-color: #3fb0ac;
 
 }
 
@@ -65,9 +65,9 @@ html,body {
     position: relative;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
-    color:white;
+    color:#3fb0ac;
     font-size: 25px;
-    background-color: #3fb0ac;
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -91,8 +91,8 @@ html,body {
 #heading {
   font-size:90px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  color:#3fb0ac;
+  font-weight: 400;
+  color:#ffffff;
   text-shadow: 1px 1px #000000;
   position: relative;
   margin-top:5px;
@@ -104,11 +104,12 @@ html,body {
 
 p#title-li {
     font-family: 'Raleway', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     padding: 5px;
-    color:#173e43;
+    color:#ffffff;
     font-weight: 200;
     text-align: center;
+    text-transform: uppercase;
 }
 
 ul#images {
