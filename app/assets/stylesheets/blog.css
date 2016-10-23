@@ -79,7 +79,6 @@ html,body {
 }
 
 #front-page {
-    display: none;
     width: 80%;
     margin:0 auto;
     position:absolute;

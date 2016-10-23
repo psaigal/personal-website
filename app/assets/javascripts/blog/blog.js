@@ -71,11 +71,9 @@ jQuery(document).ready(function ($) {
       itemsDesktopSmall : [979,2]
     });
 
-    $('#front-page').fadeIn(4000);
-
     $(".element").typed({
         strings: ["Hi, I'm Priyanka Saigal."],
-        typeSpeed: 70,
+        typeSpeed: 90,
     });
 
     setTimeout(function() {
@@ -83,7 +81,7 @@ jQuery(document).ready(function ($) {
             strings: ["Front End Developer"],
             typeSpeed: 100
         });
-    }, 2500);
+    }, 3000);
 });
 
 
