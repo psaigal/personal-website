@@ -14,6 +14,7 @@
 //= require jquery.stellar
 //= require jquery.waypoints
 //= require jquery.easing
+//= require swiper
 //= require bootstrap-sprockets
 //= require owl.carousel
 //= require typed

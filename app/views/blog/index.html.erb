@@ -1,57 +1,68 @@
 <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
   <a class="button" data-slide="2" title=""></a>
-  <ul class="navigation">
-    <li data-slide="1" class="active">About Me</li>
-    <li data-slide="2" class="active">Portfolio</li>
-    <li data-slide="3" class="active">Contact Me</li>
-  </ul>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid nav-container">
+      <ul class="nav navbar-nav navigation">
+        <li data-slide="1" class="active">About Me</li>
+        <li data-slide="2" class="active">Portfolio</li>
+        <li data-slide="3" class="active">Contact Me</li>
+      </ul>
+    </div>
+  </nav>
   <div id="front-page">
-    <h1 id="heading"><span class="element"></span></h1>
-      <p id="title-li"><span class="element-two"></span></p>
+    <h1 id="heading"><span class="title"></span></h1>
+      <p id="title-li"><span class="subtitle"></span></p>
   </div>
 </div><!--End Slide 1-->
 
   <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
     <a class="button" data-slide="3" title=""></a>
     <p id="contact-header-projects">Portfolio</p>
+    <section class="section-white">
+      <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
 
-    <ul class="portfolio">
-      <div class="col-sm-4">
-          <li class="portfolio-list">
-            <a href="http://glycemopedia.herokuapp.com" class="portfolio-link">
-            <div id="pic1">
-                <div class="text">
-                Platform that enables users to make intelligent food choices based on the glycemic index of foods consumed.
-                </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner circle">
+            <div class="item active hovereffect">
+              <img src="/imgs/glycemopedia.png" alt="...">
+              <div class="carousel-caption overlay">
+                <h2 class="picture-title">Glycemopedia</h2>
+                <p info>Platform that enables users to make intelligent food choices based on the glycemic index of foods consumed.</p>
+              </div>
             </div>
-            </a>
-          </li>
-      </div>
-
-      <div class="col-sm-4">
-        <li class="portfolio-list">
-          <a href="http://restaurant-roulette.herokuapp.com" class="portfolio-link">
-          <div id="pic2">
-            <div class="text">
-              Food decision service to help indecisive friends quickly find a restaurant based on conflicted preferences.
+            <div class="item hovereffect">
+              <img src="/imgs/restroulette.png" alt="...">
+              <div class="carousel-caption overlay">
+                <h2 class="picture-title">Restaurant Roulette</h2>
+                <p>Food decision service to help indecisive friends quickly find a restaurant based on conflicted preferences.</p>
+              </div>
+            </div>
+            <div class="item hovereffect">
+              <img src="/imgs/filmsf.png" alt="...">
+              <div class="carousel-caption overlay">
+                <h2 class="picture-title">Filmed in SF</h2>
+                <p>Web application that allows movie aficionados to view on a map the locations in San Francisco where their favorite movies were filmed.</p>
+              </div>
             </div>
           </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
-        </li>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
       </div>
-
-      <div class="col-sm-4">
-        <li class="portfolio-list">
-        <a href="http://filmed-in-sf.herokuapp.com" class="portfolio-link">
-          <div id="pic3">
-            <div class="text">
-              Web application that allows movie aficionados to view on a map the locations in San Francisco where their favorite movies were filmed
-            </div>
-          </div>
-        </a>
-        </li>
-      </div>
-    </ul>
+    </section>
   </div>
 
 

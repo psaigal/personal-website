@@ -71,17 +71,24 @@ jQuery(document).ready(function ($) {
       itemsDesktopSmall : [979,2]
     });
 
-    $(".element").typed({
+    $(".title").typed({
         strings: ["Hi, I'm Priyanka Saigal."],
         typeSpeed: 90,
     });
 
     setTimeout(function() {
-        $(".element-two").typed({
+        $(".subtitle").typed({
             strings: ["Front End Developer"],
             typeSpeed: 100
         });
     }, 3000);
+
+    var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        paginationType: 'fraction'
+    });
 });
 
 

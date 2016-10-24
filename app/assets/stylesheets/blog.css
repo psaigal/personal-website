@@ -2,6 +2,41 @@
     outline: 1px solid red;
 }*/
 
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .slide {
+        height:100% !important;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .slide {
+        height:100% !important;
+    }
+}
+
 
 html,body {
     font-family: 'Raleway', sans-serif;
@@ -12,7 +47,7 @@ html,body {
 .slide {
     background-attachment: fixed;
     width:100%;
-    height:100%;
+    height:50%;
     position: relative;
     box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
@@ -57,25 +92,28 @@ html,body {
     font-family: 'Raleway', sans-serif;
 }
 
-.navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 20px;
-    margin-top: 0%;
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    color:#3fb0ac;
-    font-size: 25px;
+.nav-container {
     background-color: #ffffff;
     text-align: center;
 }
 
-.navigation li {
-    display: inline;
+.navigation {
+    padding: 10px;
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color:#3fb0ac;
+    font-size: 25px;
+    width: 100%;
     text-align: center;
-    padding:25px;
-    position: relative;
+}
+
+.navigation li {
+    display: inline-block;
+    float: none;
+    text-align: center;
+    padding:15px;
+    /*position: relative;*/
 }
 
 #front-page {
@@ -201,8 +239,16 @@ li.social-media-icons-li {
     margin-bottom: 7%;
 }
 
+h2.picture-title {
+    font-size:40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color:#3fb0ac;
+    text-align:center;
+}
+
 p {
-    font-size:30px;
+    font-size:20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color:black;
@@ -213,15 +259,15 @@ p {
     font-size:80px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    color:white;
+    color:#3fb0ac;
     text-shadow: 1px 1px #000000;
     text-align:center;
     width:100%;
     margin-top:0px;
-    margin-bottom: 8%;
+    /*margin-bottom: 8%;*/
     padding-top: 15px;
     padding-bottom: 10px;
-    background-color:#A61919;
+    /*background-color:#A61919;*/
 }
 
 .text {
@@ -231,78 +277,8 @@ p {
     opacity:0;
 }
 
-#pic1 {
-    width:440px;
-    height:250px;
-    background: url(/imgs/glycemopedia.png) no-repeat;
-    background-size: 440px 250px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 5px #888888;
-}
-
-
-#pic1:hover .text {
-    opacity:0.8;
-    color:#A61919;
-    font-size:25px;
-    font-weight:500;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding-top: 40px;
-}
-
-#pic2 {
-    width:440px;
-    height:250px;
-    background: url(/imgs/restroulette.png) no-repeat;
-    background-size: 440px 250px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 5px #888888;
-}
-
-#pic2:hover .text {
-    opacity:0.8;
-    color:#A61919;
-    font-size:25px;
-    font-weight:500;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding-top:40px;
-}
-
-
-#pic3 {
-    width:440px;
-    height:250px;
-    background: url(/imgs/filmsf.png) no-repeat;
-    background-size: 440px 250px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 5px #888888;
-}
-
-
-#pic3:hover .text {
-    opacity:0.8;
-    color:#A61919;
-    font-size:25px;
-    font-weight:500;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding-top:40px;
-}
-
-
-.portfolio-list {
-    display: inline-block;
-    padding: 5px;
-}
-
  a:hover {
    text-decoration: none !important;
-}
-
-ul.portfolio {
-   padding: 0%;
 }
 
 .typed-cursor{
@@ -325,4 +301,165 @@ ul.portfolio {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+/* Makes images fully responsive */
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------- Carousel Styling ------------------- */
+
+.carousel-inner {
+  border-radius: 15px;
+}
+
+/*.carousel-caption {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 0 10px 25px;
+  color: #fff;
+  text-align: left;
+}*/
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  /*z-index: 15;*/
+  margin: 0;
+  padding: 0 25px 25px 0;
+  text-align: right;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+
+/* ------------------- Section Styling - Not needed for carousel styling ------------------- */
+
+.section-white {
+   padding: 10px 0;
+}
+
+.section-white {
+  background-color: #fff;
+  /*color: #555;*/
+}
+
+@media screen and (min-width: 768px) {
+
+  .section-white {
+     padding: 1.5em 0;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .container {
+    max-width: 930px;
+  }
+
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+    padding:20px;
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 55%;
+  height: 81%;
+  left: 22%;
+  top: 10%;
+  border-radius: 80%;
+  border: 2px solid #ffffff;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(50%,50%,0);
+  transform: translate3d(50%,50%,0);
+}
+
+.hovereffect:hover .overlay {
+     padding:20px;
+  background-color: #3fb0ac;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.4" /><feFuncG type="linear" slope="1.4" /><feFuncB type="linear" slope="1.4" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(1.4);
+  -webkit-filter: brightness(1.4);
+  opacity: 0.1;
+}
+
+.hovereffect h2 {
+font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 35px;
+  font-weight: 400;
+  padding: 35px;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-150%,-400%,0);
+  transform: translate3d(-150%,-400%,0);
+}
+
+.hovereffect a, .hovereffect p {
+font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-150%,-400%,0);
+  transform: translate3d(-150%,-400%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2, .hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
