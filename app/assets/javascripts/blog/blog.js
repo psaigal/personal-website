@@ -1,4 +1,8 @@
 jQuery(document).ready(function ($) {
+    $("#blog-link").click(function(){
+        window.open("http://priyankasaigalblog.wordpress.com");
+    });
+
     //initialise Stellar.js
     $(window).stellar();
 

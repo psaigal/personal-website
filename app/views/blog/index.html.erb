@@ -1,11 +1,11 @@
 <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-  <a class="button" data-slide="2" title=""></a>
   <nav class="navbar navbar-default">
     <div class="container-fluid nav-container">
       <ul class="nav navbar-nav navigation">
         <li data-slide="1" class="active">About Me</li>
         <li data-slide="2" class="active">Portfolio</li>
         <li data-slide="3" class="active">Contact Me</li>
+        <li><a id="blog-link">Blog</a></li>
       </ul>
     </div>
   </nav>
@@ -16,89 +16,100 @@
 </div><!--End Slide 1-->
 
   <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-    <a class="button" data-slide="3" title=""></a>
     <p id="contact-header-projects">Portfolio</p>
-    <section class="section-white">
-      <div class="container">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner circle">
-            <div class="item active hovereffect">
-              <img src="/imgs/glycemopedia.png" alt="...">
-              <div class="carousel-caption overlay">
-                <h2 class="picture-title">Glycemopedia</h2>
-                <p info>Platform that enables users to make intelligent food choices based on the glycemic index of foods consumed.</p>
-              </div>
+    <div class="container-fluid">
+      <div class="row">
+        <a href="https://glycemopedia.herokuapp.com/" target="_blank">
+          <div class="col-6 col-md-4 project">
+            <div class="description">
+              <p class="project-title">Glycemopedia</p>
+              <p class="project-description">Platform that enables users to make intelligent food choices based on the glycemic index of foods consumed</p>
             </div>
-            <div class="item hovereffect">
-              <img src="/imgs/restroulette.png" alt="...">
-              <div class="carousel-caption overlay">
-                <h2 class="picture-title">Restaurant Roulette</h2>
-                <p>Food decision service to help indecisive friends quickly find a restaurant based on conflicted preferences.</p>
-              </div>
-            </div>
-            <div class="item hovereffect">
-              <img src="/imgs/filmsf.png" alt="...">
-              <div class="carousel-caption overlay">
-                <h2 class="picture-title">Filmed in SF</h2>
-                <p>Web application that allows movie aficionados to view on a map the locations in San Francisco where their favorite movies were filmed.</p>
-              </div>
+            <div class="project-image">
+              <img class="project-image" src="/imgs/glycemopedia.png">
             </div>
           </div>
-
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
+        </a>
+        <a href="http://filmed-in-sf.herokuapp.com/" target="_blank">
+          <div class="col-6 col-md-4 project">
+            <div class="description">
+              <p class="project-title">Filmed in SF</p>
+              <p class="project-description">Web application that allows movie aficionados to view on a map the locations in San Francisco where their favorite movies were filmed.</p>
+            </div>
+            <div class="project-image">
+              <img class="project-image" src="/imgs/filmsf.png">
+            </div>
+          </div>
+        </a>
+        <a href="http://restaurant-roulette.herokuapp.com/" target="_blank">
+          <div class="col-6 col-md-4 project">
+            <div class="description">
+              <p class="project-title">Restaurant Roulette</p>
+              <p class="project-description">Food decision service to help indecisive friends quickly find a restaurant based on conflicted preferences.</p>
+            </div>
+            <div class="project-image">
+              <img class="project-image" src="/imgs/restroulette.png">
+            </div>
+          </div>
+        </a>
         </div>
-      </div>
-    </section>
+    </div>
   </div>
 
+  <div class="separator"></div>
 
   <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
     <div id="contact-page">
         <p id="contact-header">Contact</p>
 
-        <ul id="contact-icons">
-          <li id="contact-icons-li">Name <span class="glyphicon glyphicon-user"></span></li>
-          <li id="contact-icons-li">Location <span class="glyphicon glyphicon-map-marker"></span></li>
-          <li id="contact-icons-li">Email <span class="glyphicon glyphicon-envelope"></span></li>
-          <li id="contact-icons-li">Resume <span class="glyphicon glyphicon-pencil"></span></li>
-        </ul>
+        <div class="border row">
+          <div class="border col-lg-3">
+            <figure class="item">
+              <div class="contact-icons">Name <span class="glyphicon glyphicon-user"></div>
+              <figcaption class="caption contact-icons-info">Priyanka Saigal</figcaption>
+            </figure>
+          </div>
+          <div class="border col-lg-3">
+            <figure class="item">
+              <div class="contact-icons">Location <span class="glyphicon glyphicon-map-marker"></span></div>
+              <figcaption class="caption contact-icons-info">San Francisco, CA</figcaption>
+            </figure>
+          </div>
+          <div class="border col-lg-3">
+            <figure class="item">
+              <div class="contact-icons">Email <span class="glyphicon glyphicon-envelope"></span></div>
+              <figcaption class="caption contact-icons-info">psaigal48@gmail.com</figcaption>
+            </figure>
+          </div>
+          <div class="border col-lg-3">
+            <figure class="item">
+              <div class="contact-icons">Resume <span class="glyphicon glyphicon-pencil"></span></div>
+              <figcaption class="caption contact-icons-info"><%= link_to "Click Here", "http://docdro.id/TBFIxXH", :target => "_blank" %></figcaption>
+            </figure>
+          </div>
+        </div><!--.row-->
 
-        <ul id="contact-icons-info">
-          <li id="contact-icons-info-li">Priyanka Saigal</li>
-          <li id="contact-icons-info-li">San Francisco, CA</li>
-          <li id="contact-icons-info-li">psaigal48@gmail.com</li>
-          <li id="contact-icons-info-li"><%= link_to "Click Here", "http://docdro.id/TBFIxXH", :target => "_blank" %></li>
-        </ul>
-
-
-
-      <ul id="social-media-icons">
-        <li class="social-media-icons-li">
-          <%= link_to image_tag("GitHub.png"), "http://github.com/psaigal", :target => "_blank" %>
-        </li>
-        <li class="social-media-icons-li">
-          <%= link_to image_tag("GooglePlus.png"), "https://plus.google.com/100529383494509522614/posts", :target => "_blank" %>
-        </li>
-        <li class="social-media-icons-li">
-          <%= link_to image_tag("LinkedIn.png"), "https://www.linkedin.com/in/priyanka-saigal-5034ab56", :target => "_blank" %>
-        </li>
-        <li class="social-media-icons-li">
-          <%= link_to image_tag("Twitter.png"), "https://twitter.com/priyankasaigal", :target => "_blank" %>
-        </li>
-      </ul>
+      <div class="social-media-icons-container">
+        <div class="border col-xs-3">
+          <div class="social-media-icons">
+            <%= link_to image_tag("GitHub.png"), "http://github.com/psaigal", :target => "_blank" %>
+          </div>
+        </div>
+        <div class="border col-xs-3">
+          <div class="social-media-icons">
+            <%= link_to image_tag("GooglePlus.png"), "https://plus.google.com/100529383494509522614/posts", :target => "_blank" %>
+          </div>
+        </div>
+        <div class="border col-xs-3">
+          <div class="social-media-icons">
+            <%= link_to image_tag("LinkedIn.png"), "https://www.linkedin.com/in/priyanka-saigal-5034ab56", :target => "_blank" %>
+          </div>
+        </div>
+        <div class="border col-xs-3">
+          <div class="social-media-icons">
+            <%= link_to image_tag("Twitter.png"), "https://twitter.com/priyankasaigal", :target => "_blank" %>
+          </div>
+        </div>
+      </div><!--.row-->
     <div>
   </div>
