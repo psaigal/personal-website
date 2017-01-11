@@ -81,12 +81,12 @@
   }
   .contact-icons {
     color:#3fb0ac;
-    font-size:40px;
+    font-size:50px;
   }
 
 .contact-icons-info {
     color: gray;
-    font-size:35px;
+    font-size:45px;
     text-align:center;
     font-weight: 300;
   }
@@ -385,12 +385,12 @@ html,body {
     position: relative;
 }
 
-.wrapper {
+/*.wrapper {
     width:960px;
     height:200px;
     margin:0 auto;
     position:relative;
-}
+}*/
 
 .button {
     display:block;
