@@ -1,3 +1,5 @@
+/** { outline: 1px solid red; }*/
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
@@ -63,6 +65,30 @@
     font-size: 40px;
     width: 100%;
     text-align: center;
+  }
+  #contact-header {
+    font-size:80px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color:#3fb0ac;
+    text-align:center;
+    width:100%;
+    margin-top: 0px;
+    margin-bottom: 4%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+  }
+  .contact-icons {
+    color:#3fb0ac;
+    font-size:40px;
+  }
+
+.contact-icons-info {
+    color: gray;
+    font-size:35px;
+    text-align:center;
+    font-weight: 300;
   }
 }
 
@@ -204,6 +230,47 @@
     width: 100%;
     text-align: center;
   }
+  #contact-header {
+    font-size:50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color:#3fb0ac;
+    text-align:center;
+    width:100%;
+    margin-top: 0px;
+    margin-bottom: 4%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+  }
+  .contact-icons {
+    color:#3fb0ac;
+    font-size:30px;
+  }
+
+.contact-icons-info {
+    color: gray;
+    font-size:20px;
+    text-align:center;
+    font-weight: 300;
+  }
+  #front-page {
+    width: 80%;
+    margin:0 auto;
+    position:absolute;
+    top:35%;
+    left:10%;
+    right:10%;
+  }
+  p#title-li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    padding: 5px;
+    color:#ffffff;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 /* Large Devices, Wide Screens */
@@ -262,6 +329,47 @@
     font-size: 25px;
     width: 100%;
     text-align: center;
+  }
+  #contact-header {
+    font-size:50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color:#3fb0ac;
+    text-align:center;
+    width:100%;
+    margin-top: 0px;
+    margin-bottom: 4%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+  }
+  .contact-icons {
+    color:#3fb0ac;
+    font-size:30px;
+  }
+
+  .contact-icons-info {
+    color: gray;
+    font-size:20px;
+    text-align:center;
+    font-weight: 300;
+  }
+  #front-page {
+    width: 80%;
+    margin:0 auto;
+    position:absolute;
+    top:35%;
+    left:10%;
+    right:10%;
+  }
+  p#title-li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    padding: 5px;
+    color:#ffffff;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
@@ -336,7 +444,7 @@ html,body {
     width: 80%;
     margin:0 auto;
     position:absolute;
-    top:35%;
+    top:40%;
     left:10%;
     right:10%;
 }
@@ -356,24 +464,12 @@ html,body {
 
 p#title-li {
     font-family: 'Raleway', sans-serif;
-    font-size: 35px;
+    font-size: 40px;
     padding: 5px;
     color:#ffffff;
     font-weight: 200;
     text-align: center;
     text-transform: uppercase;
-}
-
-.contact-icons {
-    color:#3fb0ac;
-    font-size:30px;
-}
-
-.contact-icons-info {
-    color: gray;
-    font-size:20px;
-    text-align:center;
-    font-weight: 300;
 }
 
 .social-media-icons-container {
@@ -394,19 +490,6 @@ p#title-li {
     min-height:100%;
 }
 
-#contact-header {
-  font-size:50px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  color:#3fb0ac;
-  text-align:center;
-  width:100%;
-  margin-top: 0px;
-  margin-bottom: 4%;
-  padding-top: 50px;
-  padding-bottom: 40px;
-  text-transform: uppercase;
-}
 
 .item {
   margin-bottom: 40px;
