@@ -546,3 +546,23 @@ p {
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+.project  {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.project:hover {
+  opacity: .5;
+}
+
+.social-media-icons figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.social-media-icons figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
