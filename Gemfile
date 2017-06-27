@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 
+gem "animate-rails"
+
 gem 'bootstrap-sass', '~> 3.2.0'
 
 gem 'owlcarousel-rails'
@@ -37,7 +39,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'swiper-rails'
 
 gem 'jquery-ui-rails'
-gem 'bootstrap-sass', '~> 3.2.0'
+
 gem 'autoprefixer-rails'
 
 gem 'typedjs-rails', '~> 1.0.4'
