@@ -435,6 +435,10 @@ html,body {
     background-repeat:no-repeat;
 }
 
+.nav-link:hover {
+  color: #444444;
+}
+
 .button:hover {
     cursor:pointer;
 }

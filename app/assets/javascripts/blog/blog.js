@@ -30,8 +30,6 @@ jQuery(document).ready(function ($) {
             var osTrigger = ( trigger ) ? trigger : osElement;
             
             osTrigger.waypoint(function() {
-                console.log(osElement);
-                console.log("YOLO");
               osElement.addClass('animated').addClass(osAnimationClass);
               },{
                   offset: '90%'
